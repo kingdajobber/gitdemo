@@ -1,6 +1,6 @@
 # README
 
 Hello,I am from PC git repository!
-你好，我是来自PC的git仓库
+你好，我是来自PC的git仓库doc子目录
 
-此处为第二次修改
+这是创建后的修改
