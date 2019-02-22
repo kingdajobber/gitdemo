@@ -126,4 +126,67 @@ else :
 # 逻辑运算符
 - and  表示与  
 - or 表示或  
+
+## 练习：
+输入一个学生的成绩(0-100)，超出范围提示输入不合法，  
+0-59提示不及格，60-79为及格，80-89为良好，90-100为优秀
+
+- 答案：  
+```
+print("输入一个学生的成绩(0-100)，超出范围提示输入不合法，0-59提示不及格，60-79为及格，80-89为良好，90-100为优秀")
+print("\n")
+
+score = float(input("Please input one student's score: "))
+b = "不及格"
+j = "及格"
+l = "良好"
+y = "优秀"
+
+if score >= 0 and score <= 100:
+    if score >= 0 and score <= 59:
+        print(b)
+    elif score >= 60 and score <= 79:
+        print(j)
+    elif score >= 80 and score <= 89:
+        print(l)
+    else:
+        print(y)
+else:
+    print("超出成绩范围！")  
+```
+
+## 练习：  
+输入一年中的月份1-12，输出这个月属于哪个季度，如果输入其他数则报错。  
+
+- 答案：  
+```  
+m = float(input("请输入一个月份："))
+if m >=1 and m<=12:
+    if m <= 3:
+        print("本月属于一季度")
+    if 4 <= m <= 6:
+        print("本月属于二季度")
+    if 7 <= m <= 9:
+        print("本月属于三季度")
+    if 10 <= m <= 12:
+        print("本月属于四季度")
+else :
+    print("不是合法月份输入！")  
+```
+
+## 练习：  
+给出一个年份，判断是否为闰年  
+闰年规则：每四年一润，每百年不润，四百年又润  
+- 答案：  
+```
+year = int(input("Please input a Year number:"))
+
+if (year % 4 == 0) and (year % 100 != 0):
+    print("This year is a Leap Year!")
+elif (year % 400 == 0):
+    print("This year is a Leap Year!")
+else:
+    print("This year is NOT a Leap Year!")  
+```
+
  
